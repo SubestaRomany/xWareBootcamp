@@ -2,6 +2,7 @@
 rm -r git
 
 2. clone your repo locally.
+git clone SHA256:VzCIInrGA7bN3L0LmyQSlJZTxUhRZjvdjLCthNKfsbg
 
 3. create new branch called `feature-add-new-week` from `main` branch.
 git checkout -b feature-add-new-week 

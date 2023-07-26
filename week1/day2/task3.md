@@ -2,6 +2,7 @@
 git init
 
 2. Clone `xware-bootcamp` repo to your Desktop.
+git clone SHA256:VzCIInrGA7bN3L0LmyQSlJZTxUhRZjvdjLCthNKfsbg
 
 3. Create a new folder `week1` using command kine `mkdir`.
 mkdir week1

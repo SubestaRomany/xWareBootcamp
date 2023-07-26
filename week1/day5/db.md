@@ -29,8 +29,6 @@ university(# stu_id int,
 university(# foreign key(a_id) references address(a_id));
 CREATE TABLE
 
-
-
 university=# create table professor(
 university(# p_id int primary key,
 university(# f_id int,
