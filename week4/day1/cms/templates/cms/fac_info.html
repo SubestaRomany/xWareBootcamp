@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        information of faculty
+    </title>
+</head>
+<body>
+    <h1>Faculty list</h1>
+    <ul>
+        {% for faculty in info%}
+        <li><a href="{%url 'faculty:fac_info'info=faculty.name%}"></a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
