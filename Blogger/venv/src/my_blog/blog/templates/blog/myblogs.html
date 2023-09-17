@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% load static %}
+
+{%if messages %}
+{% for message in messages%}
+<div class="alert alert-{{message.tags}}">
+    {{message}}
+</div>
+{%endfor%}
+{% endif %}
+{% for post in posts %}
+<div class="border p-3 mb-3" style="border-radius: 9%;background:linear-gradient(to bottom right,hsl(202, 100%, 76%), hwb(306 50% 17%))">
+    <img class="img-fluid rounded-circle border m-2" style="width: 70px; height:70px ;"
+        src="{% static 'blog/image/3.jpg'%}" alt=''>
+       
+    <span class="text-secondary"> {{post.post_date|date:'d-m-Y'}}</span>
+    <b><h3><a class="text-dark" href="{% url 'detail' post.id %} " style="color: rgb(32, 4, 58)">{{post.title}}</a></h3></b>
+    
+</div>
+
+
+{% endfor %}
+
+
+
+{% endblock content %}
